@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		20609FA81A6EC4F0002CCC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20609FA71A6EC4F0002CCC88 /* AppDelegate.swift */; };
 		20609FAB1A6EC4F0002CCC88 /* NextTimers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20609FA91A6EC4F0002CCC88 /* NextTimers.xcdatamodeld */; };
-		20609FAD1A6EC4F0002CCC88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20609FAC1A6EC4F0002CCC88 /* ViewController.swift */; };
 		20609FB01A6EC4F0002CCC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20609FAE1A6EC4F0002CCC88 /* Main.storyboard */; };
 		20609FB21A6EC4F0002CCC88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20609FB11A6EC4F0002CCC88 /* Images.xcassets */; };
 		20609FB51A6EC4F0002CCC88 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20609FB31A6EC4F0002CCC88 /* LaunchScreen.xib */; };
 		20609FC11A6EC4F0002CCC88 /* NextTimersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20609FC01A6EC4F0002CCC88 /* NextTimersTests.swift */; };
+		20609FCD1A6EC6CD002CCC88 /* mainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20609FCC1A6EC6CD002CCC88 /* mainTableViewController.swift */; };
+		20609FCF1A6EC767002CCC88 /* itemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20609FCE1A6EC767002CCC88 /* itemViewController.swift */; };
+		20609FD11A6ECA08002CCC88 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20609FD01A6ECA08002CCC88 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		20609FA61A6EC4F0002CCC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20609FA71A6EC4F0002CCC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20609FAA1A6EC4F0002CCC88 /* NextTimers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NextTimers.xcdatamodel; sourceTree = "<group>"; };
-		20609FAC1A6EC4F0002CCC88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20609FAF1A6EC4F0002CCC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20609FB11A6EC4F0002CCC88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		20609FB41A6EC4F0002CCC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		20609FBA1A6EC4F0002CCC88 /* NextTimersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextTimersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20609FBF1A6EC4F0002CCC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20609FC01A6EC4F0002CCC88 /* NextTimersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTimersTests.swift; sourceTree = "<group>"; };
+		20609FCC1A6EC6CD002CCC88 /* mainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainTableViewController.swift; path = ../mainTableViewController.swift; sourceTree = "<group>"; };
+		20609FCE1A6EC767002CCC88 /* itemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemViewController.swift; sourceTree = "<group>"; };
+		20609FD01A6ECA08002CCC88 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +83,11 @@
 		20609FA41A6EC4F0002CCC88 /* NextTimers */ = {
 			isa = PBXGroup;
 			children = (
-				20609FA71A6EC4F0002CCC88 /* AppDelegate.swift */,
-				20609FAC1A6EC4F0002CCC88 /* ViewController.swift */,
 				20609FAE1A6EC4F0002CCC88 /* Main.storyboard */,
+				20609FCC1A6EC6CD002CCC88 /* mainTableViewController.swift */,
+				20609FCE1A6EC767002CCC88 /* itemViewController.swift */,
+				20609FD01A6ECA08002CCC88 /* Model.swift */,
+				20609FA71A6EC4F0002CCC88 /* AppDelegate.swift */,
 				20609FB11A6EC4F0002CCC88 /* Images.xcassets */,
 				20609FB31A6EC4F0002CCC88 /* LaunchScreen.xib */,
 				20609FA91A6EC4F0002CCC88 /* NextTimers.xcdatamodeld */,
@@ -215,7 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20609FAD1A6EC4F0002CCC88 /* ViewController.swift in Sources */,
+				20609FD11A6ECA08002CCC88 /* Model.swift in Sources */,
+				20609FCF1A6EC767002CCC88 /* itemViewController.swift in Sources */,
+				20609FCD1A6EC6CD002CCC88 /* mainTableViewController.swift in Sources */,
 				20609FAB1A6EC4F0002CCC88 /* NextTimers.xcdatamodeld in Sources */,
 				20609FA81A6EC4F0002CCC88 /* AppDelegate.swift in Sources */,
 			);
